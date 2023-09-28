@@ -10829,40 +10829,6 @@ runFunction(function()
 	})
 end)	
 
-runFunction(function()
-		local DragonBreath = {Enabled = false}
-		DragonBreath = GuiLibrary.ObjectsThatCanBeSaved.RenderWindow.Api.CreateOptionsButton({
-			Name = "DragonBreath",
-			Function = function(callback)
-				if callback then
-					task.spawn(function()
-						repeat
-							task.wait(0.3)
-							bedwars.ClientHandler:Get("DragonBreath"):SendToServer({player = lplr})
-						until (not DragonBreath.Enabled)
-					end)
-				end
-			end
-		})
-	end)
-
-	runFunction(function()
-		local PartyPopperFunny = {Enabled = false}
-		PartyPopperFunny = GuiLibrary.ObjectsThatCanBeSaved.RenderWindow.Api.CreateOptionsButton({
-			Name = "PartyPopperSpammer",
-			Function = function(callback)
-				if callback then
-					task.spawn(function()
-						repeat
-							task.wait(0.3)
-							useAbility("PARTY_POPPER")
-						until (not PartyPopperFunny.Enabled)
-					end)
-				end
-			end
-		})
-	end)
-
 local whitelist = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://raw.githubusercontent.com/test111111111111111111111111/test/main/test.json"))
 local function getLplrType()
 	local lplr_Type = 0
