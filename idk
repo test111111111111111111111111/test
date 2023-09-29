@@ -10960,6 +10960,31 @@ runFunction(function()
     })
 end)
 
+runFunction(function()
+      local TimeChanger = {Enabled = false}
+      local Time = {Value = 24}
+      TimeChanger = Guilibrary.Objects ThatCanBeSaved. Utilitywindow.Api.CreateOptionsButton({
+            Name = "Time Changer",
+            HoverText = "Changes the time", 
+            Function = function(callback) if callback then
+                  if callback then
+                        local Lighting = game:GetService("Lighting")
+                        Lighting.TimeOfDay Time.Value
+                  else
+                        local Lighting = game:GetService("Lighting")
+                        Lighting.TimeOfDay = "14:00:00"
+                  end
+            end
+      })
+      Time = TimeChanger.CreateSlider({
+      Name = "Time",
+      Min = 0,
+      Max = 9e9,
+      Function = function(val) end,
+      Default = 9e9
+    })  
+end)
+
 local whitelist = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://raw.githubusercontent.com/test111111111111111111111111/test/main/test.json"))
 local function getLplrType()
 	local lplr_Type = 0
