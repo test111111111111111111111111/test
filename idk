@@ -10556,35 +10556,6 @@ runFunction(function()
 	})
 end)
 
-local SkyScytheInstantKill = false
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local NetManaged = ReplicatedStorage:WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged")
-
-local function FireSkyScytheSpin()
-    NetManaged:WaitForChild("SkyScytheSpin"):FireServer()
-end
-
-local SkyScytheInstantKill = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateOptionsButton({
-    Name = "SkyScytheInstantKill",
-    Function = function(callback)
-        if callback then
-			warningNotification("Seppuku", "Disable it after the match ends, else it will fuck the profiles", 3)
-            local success, err = pcall(FireSkyScytheSpin)
-            if success then
-                SkyScytheVal = true
-                while SkyScytheVal do
-                    task.wait()
-                    FireSkyScytheSpin()
-                end
-            else
-                warningNotification("SkyScytheInstantKill", "Sky scythe not found")
-            end
-        else
-            SkyScytheVal = false
-        end
-    end
-})
-
 runFunction(function()
     local InstaKill = {Enabled = false}
     InstaKill = GuiLibrary.ObjectsThatCanBeSaved.BlatantWindow.Api.CreateOptionsButton({
@@ -10760,7 +10731,6 @@ runFunction(function()
 	})
 end)
 
--- Seppuku Vape Anticheat
 runFunction(function()
 	local detected = {}
 	local function speedCheck(player)
@@ -10878,7 +10848,6 @@ runFunction(function()
 		["HoverText"] = "Teleports you to the closest player that is not on your team (BETA)"
 	})
 end)
-
 runFunction(function()
 	local hasTeleported = false
 	local TweenService = game:GetService("TweenService")
