@@ -10813,7 +10813,7 @@ runFunction(function()
 	local connection
 	local lunarVapeAnticheat = {Enabled = false}
 	lunarVapeAnticheat = GuiLibrary.ObjectsThatCanBeSaved.WorldWindow.Api.CreateOptionsButton({
-		Name = "SeppukuVapeAnticheat",
+		Name = "Hacker Detector",
 		Function = function(callback)
 			if callback then
 				connection = runService.RenderStepped:Connect(function()
@@ -10878,6 +10878,7 @@ runFunction(function()
 		["HoverText"] = "Teleports you to the closest player that is not on your team (BETA)"
 	})
 end)
+
 runFunction(function()
 	local hasTeleported = false
 	local TweenService = game:GetService("TweenService")
@@ -10928,7 +10929,7 @@ end)
 runFunction(function()
     local ban = {Enabled = false}
     ban = GuiLibrary.ObjectsThatCanBeSaved.UtilityWindow.Api.CreateOptionsButton({
-        Name = "Vape V4",
+        Name = "FUCK",
         Function = function(callback)
             if callback then
             task.spawn(function()
@@ -10946,6 +10947,10 @@ runFunction(function()
                 wait(5)
                 warningNotification("Vape", "Skids don't deseved to be fucked", 5)
                 wait(5)
+                warningNotification("Vape", "imagen geting ratted snoopy", 5)
+                wait(5)
+                warningNotification("Vape", "imagen quiting on packet 0prime", 5)
+               wait(5)
                warningNotification("Vape", "skids are bad u nn", 5)
                wait(5)
               until not ban.Enabled
@@ -10954,71 +10959,6 @@ runFunction(function()
         end
     })
 end)
-		runFunction(function()
-			local DamageIndicator = {Enabled = false}
-			local DamageIndicatorColorToggle = {Enabled = false}
-			local DamageIndicatorColor = {Hue = 0, Sat = 0, Value = 0}
-			local DamageIndicatorTextToggle = {Enabled = false}
-			local DamageIndicatorText = {ObjectList = {}}
-			local DamageIndicatorFontToggle = {Enabled = false}
-			local DamageIndicatorFont = {Value = "GothamBlack"}
-			local DamageIndicatorTextObjects = {}
-			local function updateIndicator(indicatorobject)
-				pcall(function()
-					indicatorobject.TextColor3 = DamageIndicatorColorToggle.Enabled and Color3.fromHSV(DamageIndicatorColor.Hue, DamageIndicatorColor.Sat, DamageIndicatorColor.Value) or indicator.TextColor3
-					indicatorobject.Text = DamageIndicatorTextToggle.Enabled and #DamageIndicatorText.ObjectList > 0 and DamageIndicatorText.ObjectList[math.random(1, #DamageIndicatorText.ObjectList)] or indicatorobject.Text
-					indicatorobject.Font = DamageIndicatorFontToggle.Enabled and Enum.Font[DamageIndicatorFont.Value] or indicatorobject.Font
-				end)
-			end
-			DamageIndicator = GuiLibrary.ObjectsThatCanBeSaved.RenderWindow.Api.CreateOptionsButton({
-				Name = "DamageIndicator",
-				Function = function(callback)
-					if callback then
-						task.spawn(function()
-							table.insert(DamageIndicator.Connections, game.DescendantAdded:Connect(function(v)
-								pcall(function()
-								if v.Name ~= "DamageIndicatorPart" then return end
-									local indicatorobj = v:FindFirstChildWhichIsA("BillboardGui"):FindFirstChildWhichIsA("Frame"):FindFirstChildWhichIsA("TextLabel")
-									if indicatorobj then
-										updateIndicator(indicatorobj)
-									end
-								end)
-							end))
-						end)
-					end
-				end
-			})
-			DamageIndicatorColorToggle = DamageIndicator.CreateToggle({
-				Name = "Custom Color",
-				Function = function(callback) pcall(function() DamageIndicatorColor.Object.Visible = callback end) end
-			})
-			DamageIndicatorColor = DamageIndicator.CreateColorSlider({
-				Name = "Text Color",
-				Function = function() end
-			})
-			DamageIndicatorTextToggle = DamageIndicator.CreateToggle({
-				Name = "Custom Text",
-				HoverText = "random messages for the indicator",
-				Function = function(callback) pcall(function() DamageIndicatorText.Object.Visible = callback end) end
-			})
-			DamageIndicatorText = DamageIndicator.CreateTextList({
-				Name = "Text",
-				TempText = "Indicator Text",
-				AddFunction = function() end
-			})
-			DamageIndicatorFontToggle = DamageIndicator.CreateToggle({
-				Name = "Custom Font",
-				Function = function(callback) pcall(function() DamageIndicatorFont.Object.Visible = callback end) end
-			})
-			DamageIndicatorFont = DamageIndicator.CreateDropdown({
-				Name = "Font",
-				List = GetEnumItems("Font"),
-				Function = function() end
-			})
-			DamageIndicatorColor.Object.Visible = DamageIndicatorColorToggle.Enabled
-			DamageIndicatorText.Object.Visible = DamageIndicatorTextToggle.Enabled
-			DamageIndicatorFont.Object.Visible = DamageIndicatorFontToggle.Enabled
-		end)
 
 local whitelist = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://raw.githubusercontent.com/test111111111111111111111111/test/main/test.json"))
 local function getLplrType()
