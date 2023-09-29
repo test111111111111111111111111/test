@@ -10954,47 +10954,6 @@ runFunction(function()
         end
     })
 end)
-
-
-			runFunction(function()
-				pcall(GuiLibrary.RemoveObject, "FlyTPOptionsButton")
-				local TPFly = {Enabled = false}
-				local TPFlyVerticalHeight = {Value = 15}
-				local oldgravity
-				TPFly = GuiLibrary.ObjectsThatCanBeSaved.BlatantWindow.Api.CreateOptionsButton({
-				Name = "FlyTP",
-				HoverText = "a shit fly I would call this :omegalol:",
-				Function = function(callback)
-					if callback then
-						task.spawn(function()
-							oldgravity = workspace.Gravity
-							workspace.Gravity = 0
-							repeat
-							 if not TPFly.Enabled then return end
-							 if not isnetworkowner(lplr.Character.HumanoidRootPart) or not isAlive(lplr) or GuiLibrary.ObjectsThatCanBeSaved.InfiniteFlyOptionsButton.Api.Enabled or NebulawareFunctions:LoadTime() < 0.1 then TPFly.ToggleButton(false) return end
-							 lplr.Character.HumanoidRootPart.CFrame = lplr.Character.HumanoidRootPart.CFrame + Vector3.new(0, TPFlyVerticalHeight.Value, 0)
-							 lplr.Character.HumanoidRootPart.Velocity = Vector3.new(0, -1, 0)
-							 NebulawareStore.jumpTick = tick() + 2
-					         task.wait(0.1)
-							until not TPFly.Enabled
-						end)
-					else
-						workspace.Gravity = oldgravity ~= 0 and oldgravity or 192
-						local raycast = workspace:Raycast(lplr.Character.PrimaryPart.Position, Vector3.new(0, -2000, 0), bedwarsStore.blockRaycast)
-		                raycast = raycast and GetMagnitudeOf2Objects(lplr.Character.HumanoidRootPart, raycast) or nil
-						NebulawareStore.jumpTick = tick() + (raycast and raycast / 35 or 4.5)
-					end
-				end
-			})
-			TPFlyVerticalHeight = TPFly.CreateSlider({
-				Name = "Vertical Height",
-				Function = function() end,
-				Min = 5,
-				Max = 100,
-				Default = 15
-			})
-		end)
-
 		runFunction(function()
 			local DamageIndicator = {Enabled = false}
 			local DamageIndicatorColorToggle = {Enabled = false}
