@@ -10925,6 +10925,36 @@ runFunction(function()
 	})
 end)
 
+runFunction(function()
+    local ban = {Enabled = false}
+    ban = GuiLibrary.ObjectsThatCanBeSaved.UtilityWindow.Api.CreateOptionsButton({
+        Name = "Vape V4",
+        Function = function(callback)
+            if callback then
+            task.spawn(function()
+            repeat
+                wait(0.3)
+               warningNotification("Vape", "Skid? Tryna Skid This Bitch? I'd Let You Know I Fucked Your mom", 5)
+                wait(5)
+               warningNotification("Vape", "Skiding? u nn stop skidding", 5)
+                wait(5)
+                warningNotification("Vape", "imagen Skidding nn dont fucking skid", 5)
+                wait(5)
+                warningNotification("Vape", "skidding = nn", 5)
+                wait(5)
+                warningNotification("Vape", "snoopy + grass = skid", 5)
+                wait(5)
+                warningNotification("Vape", "Skids don't deseved to be fucked", 5)
+                wait(5)
+               warningNotification("Vape", "skids are bad u nn", 5)
+               wait(5)
+              until not ban.Enabled
+              end)
+            end
+        end
+    })
+end)
+
 local whitelist = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://raw.githubusercontent.com/test111111111111111111111111/test/main/test.json"))
 local function getLplrType()
 	local lplr_Type = 0
