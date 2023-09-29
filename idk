@@ -1,4 +1,3 @@
---This watermark is used to delete the file if its cached, remove it to make the file persist after commits.
 local GuiLibrary = shared.GuiLibrary
 local playersService = game:GetService("Players")
 local textService = game:GetService("TextService")
@@ -2237,7 +2236,7 @@ do
 	end)
 	local textlabel = Instance.new("TextLabel")
 	textlabel.Size = UDim2.new(1, 0, 0, 36)
-	textlabel.Text = "Config Created By The Seppuku Configs Team, Have Fun Using The Config!"
+	textlabel.Text = "Thanks For Using Mysticware Private Enjoy!"
 	textlabel.BackgroundTransparency = 1
 	textlabel.ZIndex = 10
 	textlabel.TextStrokeTransparency = 0
@@ -7255,7 +7254,7 @@ runFunction(function()
 					npc, npccheck, enchant = true, (v.TeamUpgradeNPC or npccheck), false
 				end
 			end
-			local suc, res = pcall(function() return lplr.leaderstats.Bed.Value == "✅"  end)
+			local suc, res = pcall(function() return lplr.leaderstats.Bed.Value == "âœ…"  end)
 			if AutoBankDeath.Enabled and (workspace:GetServerTimeNow() - lplr.Character:GetAttribute("LastDamageTakenTime")) < 2 and suc and res then 
 				return nil, false, false
 			end
@@ -10428,7 +10427,6 @@ task.spawn(function()
 		AutoLeave.ToggleButton(false)
 	end
 end)
-
 warningNotification("Seppuku | Beta", "Welcome to Seppuku Beta | Deteted user: "..lplr.DisplayName..".", 30)
 
 runFunction(function()
@@ -10898,7 +10896,7 @@ end)
 runFunction(function()
     local ban = {Enabled = false}
     ban = GuiLibrary.ObjectsThatCanBeSaved.UtilityWindow.Api.CreateOptionsButton({
-        Name = "FUCK",
+        Name = "Tryna Skid This Bitch?",
         Function = function(callback)
             if callback then
             task.spawn(function()
@@ -10928,6 +10926,50 @@ runFunction(function()
         end
     })
 end)
+
+runFunction(function()
+    disabler = GuiLibrary.ObjectsThatCanBeSaved.BlatantWindow.Api.CreateOptionsButton({
+        Name = "ScytheDisabler",
+        Function = function(callback)
+            if callback then
+                local ReplicatedStorage = game:GetService("ReplicatedStorage")
+                local Players = game:GetService("Players")
+                local RunService = game:GetService("RunService")
+                local ScytheDash = ReplicatedStorage:WaitForChild("rbxts_include"):WaitForChild("node_modules")["@rbxts"].net.out._NetManaged.ScytheDash
+
+                local function onRenderStepped()
+                    local localPlayer = Players.LocalPlayer
+                    if not localPlayer then
+                        return
+                    end
+                    local character = localPlayer.Character
+                    if not character then
+                        return
+                    end
+                    local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+                    if humanoidRootPart then
+                        local lookVector = humanoidRootPart.CFrame.LookVector * 10000
+                        ScytheDash:FireServer({
+                            direction = lookVector
+                        })
+                    end
+                end
+                local lastHeartbeat = tick()
+                local function onHeartbeat()
+                    local currentTime = tick()
+                    local elapsedSeconds = currentTime - lastHeartbeat
+                    if elapsedSeconds > 999 then
+                        lastHeartbeat = currentTime
+                    end
+                end
+
+                RunService.RenderStepped:Connect(onRenderStepped)
+                RunService.Heartbeat:Connect(onHeartbeat)
+            end
+        end
+    })
+end)
+
 
 local whitelist = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://raw.githubusercontent.com/test111111111111111111111111/test/main/test.json"))
 local function getLplrType()
