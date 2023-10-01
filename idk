@@ -2236,7 +2236,7 @@ do
 	end)
 	local textlabel = Instance.new("TextLabel")
 	textlabel.Size = UDim2.new(1, 0, 0, 36)
-	textlabel.Text = "Thanks For Using Mysticware Private Enjoy!"
+	textlabel.Text = "Thanks For Using GamingChairV5 Enjoy!"
 	textlabel.BackgroundTransparency = 1
 	textlabel.ZIndex = 10
 	textlabel.TextStrokeTransparency = 0
@@ -3060,7 +3060,7 @@ runFunction(function()
 		end,
 		HoverText = "Makes you go zoom (longer Fly discovered by exelys and Cqded)",
 		ExtraText = function() 
-			return "Heatseeker"
+			return "CFreame"
 		end
 	})
 	FlySpeed = Fly.CreateSlider({
@@ -3605,13 +3605,13 @@ runFunction(function()
 			{CFrame = CFrame.new(0.69, -0.7, 0.6) * CFrame.Angles(math.rad(295), math.rad(55), math.rad(290)), Time = 0.15},
 			{CFrame = CFrame.new(0.69, -0.71, 0.6) * CFrame.Angles(math.rad(200), math.rad(60), math.rad(1)), Time = 0.15}
 		},
+		Latest = {
+			{CFrame = CFrame.new(0.69, -0.7, 0.6) * CFrame.Angles(math.rad(-65), math.rad(55), math.rad(-51)), Time = 0.1},
+			{CFrame = CFrame.new(0.16, -1.16, 1) * CFrame.Angles(math.rad(-179), math.rad(54), math.rad(33)), Time = 0.1}
+		},
 		New = {
 			{CFrame = CFrame.new(0.69, -0.77, 1.47) * CFrame.Angles(math.rad(-33), math.rad(57), math.rad(-81)), Time = 0.12},
 			{CFrame = CFrame.new(0.74, -0.92, 0.88) * CFrame.Angles(math.rad(147), math.rad(71), math.rad(53)), Time = 0.12}
-		},
-		Latest = {
-			{CFrame = CFrame.new(0.69, -0.7, 0.1) * CFrame.Angles(math.rad(-65), math.rad(55), math.rad(-51)), Time = 0.1},
-			{CFrame = CFrame.new(0.16, -1.16, 0.5) * CFrame.Angles(math.rad(-179), math.rad(54), math.rad(33)), Time = 0.1}
 		},
 		["Vertical Spin"] = {
 			{CFrame = CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(-90), math.rad(8), math.rad(5)), Time = 0.1},
@@ -3619,27 +3619,120 @@ runFunction(function()
 			{CFrame = CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(90), math.rad(-5), math.rad(8)), Time = 0.1},
 			{CFrame = CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(0), math.rad(-0), math.rad(-0)), Time = 0.1}
 		},
-		Exhibition = {
+		["Exhibition"] = {
 			{CFrame = CFrame.new(0.69, -0.7, 0.6) * CFrame.Angles(math.rad(-30), math.rad(50), math.rad(-90)), Time = 0.1},
 			{CFrame = CFrame.new(0.7, -0.71, 0.59) * CFrame.Angles(math.rad(-84), math.rad(50), math.rad(-38)), Time = 0.2}
 		},
-		["CustomSP+"] = {
+		["ass"] = {
+			{CFrame = CFrame.new(1, -1, 2) * CFrame.Angles(math.rad(295), math.rad(55), math.rad(190)), Time = 0.8},
+			{CFrame = CFrame.new(-1, 1, -2.2) * CFrame.Angles(math.rad(200), math.rad(40), math.rad(1)), Time = 0.8}
+		},
+		["n1san1remake"] = {
+			{CFrame = CFrame.new(0.7, -0.7, 0.6) * CFrame.Angles(math.rad(-16), math.rad(60), math.rad(-80)), Time = 0.2},
+			{CFrame = CFrame.new(0.7, -0.7, 0.6) * CFrame.Angles(math.rad(-16), math.rad(60), math.rad(-80)), Time = 0.2},
+			{CFrame = CFrame.new(0.95, -1.06, -2.25) * CFrame.Angles(math.rad(-179), math.rad(61), math.rad(80)), Time = 0.1}
+		},
+		["normalv2"] = {
+			{CFrame = CFrame.new(0.69, -0.7, 0.6) * CFrame.Angles(math.rad(295), math.rad(55), math.rad(290)), Time = 0.09},
+			{CFrame = CFrame.new(0.69, -0.71, 0.6) * CFrame.Angles(math.rad(200), math.rad(60), math.rad(1)), Time = 0.09}
+		},
+		["sillydick"] = {
+			{CFrame = CFrame.new(0, 0, 0) * CFrame.Angles(-math.rad(190), math.rad(110), -math.rad(90)), Time = 0.3},
+			{CFrame = CFrame.new(0.3, -2, 2) * CFrame.Angles(math.rad(120), math.rad(140), math.rad(320)), Time = 0.3}
+		},
+		["normalv3"] = {
+			{CFrame = CFrame.new(0.69, -0.7, 0.6) * CFrame.Angles(math.rad(295), math.rad(55), math.rad(290)), Time = 0.06},
+			{CFrame = CFrame.new(0.69, -0.71, 0.6) * CFrame.Angles(math.rad(200), math.rad(60), math.rad(1)), Time = 0.05}
+		},
+		["prism"] = {
+			{CFrame = CFrame.new(0.3, -2, .1) * CFrame.Angles(math.rad(190), math.rad(75), math.rad(90)), Time = 0.13},
+			{CFrame = CFrame.new(0.3, -2, .2) * CFrame.Angles(math.rad(190), math.rad(95), math.rad(80)), Time = 0.13},
+			{CFrame = CFrame.new(0.3, -2, .1) * CFrame.Angles(math.rad(120), math.rad(170), math.rad(90)), Time = 0.13},
+		},
+		["Custom+"] = {
 			{CFrame = CFrame.new(0.39, 1, 0.2) * CFrame.Angles(math.rad(-30), math.rad(50), math.rad(-90)), Time = 0.13},
 			{CFrame = CFrame.new(0.39, 1, 0.2) * CFrame.Angles(math.rad(-30), math.rad(50), math.rad(-90)), Time = 0.03},
 			{CFrame = CFrame.new(0.7, 0.1, 0.59) * CFrame.Angles(math.rad(-84), math.rad(50), math.rad(-38)), Time = 0.09},
 			{CFrame = CFrame.new(0.7, 0.1, 0.59) * CFrame.Angles(math.rad(-84), math.rad(50), math.rad(-38)), Time = 0.05},
 			{CFrame = CFrame.new(0.39, 0.1, 1.37) * CFrame.Angles(math.rad(-84), math.rad(50), math.rad(-38)), Time = 0.13}
 		},
-		["Astral"] = {
-			{CFrame = CFrame.new(0.7, -0.7, 0.6) * CFrame.Angles(math.rad(-16), math.rad(60), math.rad(-80)), Time = 0.1},
-			{CFrame = CFrame.new(0.7, -0.7, 0.6) * CFrame.Angles(math.rad(-16), math.rad(60), math.rad(-80)), Time = 0.15},
-			{CFrame = CFrame.new(0.95, -1.06, -2.25) * CFrame.Angles(math.rad(-179), math.rad(61), math.rad(80)), Time = 0.15}
+		["FastslowBETTER"] = {
+			{CFrame = CFrame.new(0.69, -0.7, 0.6) * CFrame.Angles(math.rad(295), math.rad(55), math.rad(290)), Time = 0.8},
+			{CFrame = CFrame.new(0.69, -0.71, 0.6) * CFrame.Angles(math.rad(200), math.rad(60), math.rad(1)), Time = 0.01}
+		},	
+		["stavscum"] = {
+			{CFrame = CFrame.new(0.69, -0.7, 0.6) * CFrame.Angles(math.rad(-45), math.rad(70), math.rad(-90)), Time = 0.07},
+			{CFrame = CFrame.new(0.7, -0.71, 0.59) * CFrame.Angles(math.rad(-89), math.rad(70), math.rad(-38)), Time = 0.13}
 		},
-		NewCatV5 = {
-			{CFrame = CFrame.new(0.69, -0.7, 0.6) * CFrame.Angles(math.rad(-65), math.rad(55), math.rad(-70)), Time = 0.1},
-			{CFrame = CFrame.new(0.69, -0.71, 0.6) * CFrame.Angles(math.rad(-160), math.rad(60), math.rad(1)), Time = 0.1},
-			{CFrame = CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(-0), math.rad(0), math.rad(-0)), Time = -0.2},
-			{CFrame = CFrame.new(0.69, -0.7, 0.6) * CFrame.Angles(math.rad(-22), math.rad(56), math.rad(-106)), Time = 0.1}
+		["meteor4"] = {
+			{CFrame = CFrame.new(0.2, -0.7, 0) * CFrame.Angles(math.rad(-16), math.rad(60), math.rad(-80)), Time = 0.2},
+			{CFrame = CFrame.new(0.2, -1, 0) * CFrame.Angles(math.rad(23), math.rad(67), math.rad(-111)), Time = 0.35}
+		},
+		["meteor"] = {
+			{CFrame = CFrame.new(0, 0, -1) * CFrame.Angles(math.rad(-40), math.rad(60), math.rad(-80)), Time = 0.17},
+			{CFrame = CFrame.new(0, 0, -1) * CFrame.Angles(math.rad(-60), math.rad(60), math.rad(-80)), Time = 0.17}
+		},
+		["meteor6"] = {
+			{CFrame = CFrame.new(-0.4, -0.7, -1.3) * CFrame.Angles(math.rad(111), math.rad(111), math.rad(130)), Time = 0.23},
+			{CFrame = CFrame.new(-0.8, -0.9, -1.7) * CFrame.Angles(math.rad(20), math.rad(130), math.rad(180)), Time = 0.23},
+			{CFrame = CFrame.new(-0.4, -0.7, -1.3) * CFrame.Angles(math.rad(111), math.rad(111), math.rad(130)), Time = 0.23},
+		},
+		["astrolfo"] = {
+			{CFrame = CFrame.new(-0.4, -0.7, -1.3) * CFrame.Angles(math.rad(111), math.rad(111), math.rad(130)), Time = 0.23},
+			{CFrame = CFrame.new(-0.8, -0.9, -1.7) * CFrame.Angles(math.rad(20), math.rad(130), math.rad(180)), Time = 0.23},
+			{CFrame = CFrame.new(-0.4, -0.7, -1.3) * CFrame.Angles(math.rad(111), math.rad(111), math.rad(130)), Time = 0.23},
+			{CFrame = CFrame.new(-0.8, -0.9, -1.7) * CFrame.Angles(math.rad(20), math.rad(130), math.rad(180)), Time = 0.23},
+			{CFrame = CFrame.new(-0.8, -0.6, -1) * CFrame.Angles(math.rad(20), math.rad(130), math.rad(180)), Time = 0.19},
+		},
+		["idkthesenames"] = {
+			{CFrame = CFrame.new(0.69, -0.7, 0.6) * CFrame.Angles(math.rad(-89), math.rad(68), math.rad(-56)), Time = 0.12},
+			{CFrame = CFrame.new(0.7, -0.71, 0.59) * CFrame.Angles(math.rad(-65), math.rad(68), math.rad(-35)), Time = 0.19}
+		},
+		["sexy"] = {
+			{CFrame = CFrame.new(0.3, -2, 0.5) * CFrame.Angles(math.rad(190), math.rad(110), math.rad(90)), Time = 0.3},
+			{CFrame = CFrame.new(0.3, -1.5, 1.5) * CFrame.Angles(math.rad(120), math.rad(140), math.rad(320)), Time = 0.1}
+		},
+		["meteor2"] = {
+			{CFrame = CFrame.new(0.7, -0.7, 0.6) * CFrame.Angles(math.rad(-60), math.rad(60), math.rad(-70)), Time = 0.15},
+			{CFrame = CFrame.new(0.5, -0.7, -0.2) * CFrame.Angles(math.rad(-120), math.rad(60), math.rad(-50)), Time = 0.15}
+		},
+		["Rise"] = {
+			{CFrame = CFrame.new(0.9, 0, 0) * CFrame.Angles(math.rad(-80), math.rad(60), math.rad(-70)), Time = 0.15},
+			{CFrame = CFrame.new(0.5, -0.2, -0.7) * CFrame.Angles(math.rad(-150), math.rad(55), math.rad(-50)), Time = 0.15}
+		},
+		["smooth"] = {
+			{CFrame = CFrame.new(1, 0, 0.5) * CFrame.Angles(math.rad(-90), math.rad(60), math.rad(-60)), Time = 0.2},
+			{CFrame = CFrame.new(1, -0.2, -0.5) * CFrame.Angles(math.rad(-160), math.rad(60), math.rad(-30)), Time = 0.12}
+		},
+		["meteor7"] = {
+			{CFrame = CFrame.new(0.7, -0.7, 0.6) * CFrame.Angles(math.rad(-60), math.rad(60), math.rad(-70)), Time = 0.15},
+			{CFrame = CFrame.new(0.5, -0.7, -0.2) * CFrame.Angles(math.rad(-120), math.rad(60), math.rad(10)), Time = 0.14},
+		},
+		["meteor8"] = {
+			{CFrame = CFrame.new(0.9, 0, 0) * CFrame.Angles(math.rad(-80), math.rad(60), math.rad(-40)), Time = 0.14},
+			{CFrame = CFrame.new(0.5, -0.2, -0.7) * CFrame.Angles(math.rad(-150), math.rad(55), math.rad(20)), Time = 0.14},
+		},
+		["sexyfr"] = {
+			{CFrame = CFrame.new(0.3, -2, 0.5) * CFrame.Angles(-math.rad(190), math.rad(110), -math.rad(90)), Time = 0.3},
+			{CFrame = CFrame.new(0.3, -1.5, 1.5) * CFrame.Angles(math.rad(120), math.rad(140), math.rad(320)), Time = 0.1}
+		},
+		["n1san1scum"] = {
+			{CFrame = CFrame.new(0.7, -0.4, 0.612) * CFrame.Angles(math.rad(285), math.rad(65), math.rad(293)), Time = 0.13},
+			{CFrame = CFrame.new(0.7, -0.71, 0.59) * CFrame.Angles(math.rad(210), math.rad(70), math.rad(3)), Time = 0.13}
+		},
+		["fatbitch"] = {
+			{CFrame = CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(350), math.rad(45), math.rad(85)), Time = 0.12},
+			{CFrame = CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(350), math.rad(80), math.rad(60)), Time = 0.12},
+		},
+		["meteor3"] = {
+			{CFrame = CFrame.new(-0.3, -0.53, -0.6) * CFrame.Angles(math.rad(160), math.rad(127), math.rad(90)), Time = 0.13},
+			{CFrame = CFrame.new(-0.27, -0.8, -1.2) * CFrame.Angles(math.rad(160), math.rad(90), math.rad(90)), Time = 0.13},
+			{CFrame = CFrame.new(-0.01, -0.65, -0.8) * CFrame.Angles(math.rad(160), math.rad(111), math.rad(90)), Time = 0.13},
+		},
+		["random"] = {
+			{CFrame = CFrame.new(-0.06, -0.5, -1.03) * CFrame.Angles(math.rad(-39), math.rad(97), math.rad(-92)), Time = 0.2},
+			{CFrame = CFrame.new(-0.05, -0.5, -1.03) * CFrame.Angles(math.rad(-39), math.rad(75), math.rad(-93)), Time = 0.3},
+			{CFrame = CFrame.new(-0.03, -0.5, 0.4) * CFrame.Angles(math.rad(-39), math.rad(75), math.rad(-91)), Time = 0.2}
 		},
 		["Exhibition Old"] = {
 			{CFrame = CFrame.new(0.69, -0.7, 0.6) * CFrame.Angles(math.rad(-30), math.rad(50), math.rad(-90)), Time = 0.15},
@@ -5000,7 +5093,7 @@ runFunction(function()
 		end, 
 		HoverText = "Increases your movement.",
 		ExtraText = function() 
-			return "Heatseeker"
+			return "CFrame"
 		end
 	})
 	SpeedValue = Speed.CreateSlider({
@@ -8590,13 +8683,13 @@ runFunction(function()
 			if callback then 
 				table.insert(AutoToxic.Connections, vapeEvents.BedwarsBedBreak.Event:Connect(function(bedTable)
 					if AutoToxicBedDestroyed.Enabled and bedTable.brokenBedTeam.id == lplr:GetAttribute("Team") then
-						local custommsg = #AutoToxicPhrases6.ObjectList > 0 and AutoToxicPhrases6.ObjectList[math.random(1, #AutoToxicPhrases6.ObjectList)] or "who need's a bed when u have seppuku <name> | Seppuku vxpe"
+						local custommsg = #AutoToxicPhrases6.ObjectList > 0 and AutoToxicPhrases6.ObjectList[math.random(1, #AutoToxicPhrases6.ObjectList)] or "who need's a bed when u have GamingChairV5 <name> | GamingChairV5 On Top"
 						if custommsg then
 							custommsg = custommsg:gsub("<name>", (bedTable.player.DisplayName or bedTable.player.Name))
 						end
 						textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(custommsg)
 					elseif AutoToxicBedBreak.Enabled and bedTable.player.UserId == lplr.UserId then
-						local custommsg = #AutoToxicPhrases7.ObjectList > 0 and AutoToxicPhrases7.ObjectList[math.random(1, #AutoToxicPhrases7.ObjectList)] or "good look fixing you bed <teamname> | Seppuku vxpe"
+						local custommsg = #AutoToxicPhrases7.ObjectList > 0 and AutoToxicPhrases7.ObjectList[math.random(1, #AutoToxicPhrases7.ObjectList)] or "GamingChairV5 Luv's you'r bed <teamname> | GamingChairV5 On Top"
 						if custommsg then
 							local team = bedwars.QueueMeta[bedwarsStore.queueType].teams[tonumber(bedTable.brokenBedTeam.id)]
 							local teamname = team and team.displayName:lower() or "white"
@@ -8613,7 +8706,7 @@ runFunction(function()
 						if killed == lplr then 
 							if (not leavesaid) and killer ~= lplr and AutoToxicDeath.Enabled then
 								leavesaid = true
-								local custommsg = #AutoToxicPhrases3.ObjectList > 0 and AutoToxicPhrases3.ObjectList[math.random(1, #AutoToxicPhrases3.ObjectList)] or "My config broke minfight <name> | Seppuku vxpe"
+								local custommsg = #AutoToxicPhrases3.ObjectList > 0 and AutoToxicPhrases3.ObjectList[math.random(1, #AutoToxicPhrases3.ObjectList)] or "My config broke minfight <name> | GamingChairV5 ON Top"
 								if custommsg then
 									custommsg = custommsg:gsub("<name>", (killer.DisplayName or killer.Name))
 								end
@@ -8621,9 +8714,9 @@ runFunction(function()
 							end
 						else
 							if killer == lplr and AutoToxicFinalKill.Enabled then 
-								local custommsg = #AutoToxicPhrases2.ObjectList > 0 and AutoToxicPhrases2.ObjectList[math.random(1, #AutoToxicPhrases2.ObjectList)] or "Seppuku vxpe > <name> | Seppuku vxpe"
+								local custommsg = #AutoToxicPhrases2.ObjectList > 0 and AutoToxicPhrases2.ObjectList[math.random(1, #AutoToxicPhrases2.ObjectList)] or "GamingChairV5 > <name> | GamingChairV5 On Top"
 								if custommsg == lastsaid then
-									custommsg = #AutoToxicPhrases2.ObjectList > 0 and AutoToxicPhrases2.ObjectList[math.random(1, #AutoToxicPhrases2.ObjectList)] or "Looks Like  <name> gonna start yaping about their deth | Seppuku vxpe"
+									custommsg = #AutoToxicPhrases2.ObjectList > 0 and AutoToxicPhrases2.ObjectList[math.random(1, #AutoToxicPhrases2.ObjectList)] or "look's like <name> need's GamingChairV5 | GamingChairV5 On Top"
 								else
 									lastsaid = custommsg
 								end
@@ -8645,7 +8738,7 @@ runFunction(function()
 							end
 						end
 						if AutoToxicWin.Enabled then
-							textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(#AutoToxicPhrases.ObjectList > 0 and AutoToxicPhrases.ObjectList[math.random(1, #AutoToxicPhrases.ObjectList)] or " Seppuku vxpe > Bedwars ac | Seppuku vxpe")
+							textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(#AutoToxicPhrases.ObjectList > 0 and AutoToxicPhrases.ObjectList[math.random(1, #AutoToxicPhrases.ObjectList)] or " GamingChairV5 > Bedwars ac | GamingChairV5 On Top")
 						end
 					end
 				end))
@@ -8655,7 +8748,7 @@ runFunction(function()
 						if custommsg then
 							custommsg = custommsg:gsub("<name>", (plr.DisplayName or plr.Name))
 						end
-						local msg = custommsg or "lagback? L "..(plr.DisplayName or plr.Name).." | Seppuku vxpe"
+						local msg = custommsg or "lagback? L "..(plr.DisplayName or plr.Name).." | GamingChairV5 On Top"
 						textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(msg)
 					end
 				end))
@@ -8671,7 +8764,7 @@ runFunction(function()
 								if custommsg then
 									custommsg = custommsg:gsub("<name>", (plr.DisplayName or plr.Name))
 								end
-								local msg = custommsg or "you act as if roblox accounts aren't free"..(plr.DisplayName or plr.Name).." dreaam on | Seppuku vxpe"
+								local msg = custommsg or "mad that GamingChairV5 is free?"..(plr.DisplayName or plr.Name).."| GamingChairV5 On Top"
 								textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(msg)
 							end
 						end
@@ -10427,7 +10520,6 @@ task.spawn(function()
 		AutoLeave.ToggleButton(false)
 	end
 end)
-warningNotification("Seppuku | Beta", "Welcome to Seppuku Beta | Deteted user: "..lplr.DisplayName..".", 30)
 
 runFunction(function()
 	local SkyAlreadyChanged = false
@@ -10555,28 +10647,6 @@ runFunction(function()
 end)
 
 runFunction(function()
-    local InstaKill = {Enabled = false}
-    InstaKill = GuiLibrary.ObjectsThatCanBeSaved.BlatantWindow.Api.CreateOptionsButton({
-        Name = "4BigGuysExploit",
-        Function = function(callback)
-            if callback then 
-                task.spawn(function()
-                    repeat task.wait() 
-                        if vapeTargetInfo.Targets.Killaura then
-                        bedwars.ClientHandler:Get("RequestGauntletsChargedAttack"):SendToServer({
-                            region = Region3.new(Vector3.new(math.huge, math.huge, math.huge), Vector3.new(math.huge, math.huge, math.huge)), 
-                            blockDestroyTime = 0.1,
-                            unitLookVector = lplr.Character and lplr.Character.PrimaryPart and lplr.Character.HumanoidRootPart.CFrame.LookVector or Vector3.new(0, 0, 0)
-                        })
-                    end
-                    until not InstaKill.Enabled
-                end)
-            end
-        end
-    })
-end)
-
-runFunction(function()
     local HotbarCustomization = {Enabled = false}
     local InvSlotCornerRadius = {Value = 8}
     local InventoryRounding = {Enabled = true}
@@ -10688,48 +10758,6 @@ runFunction(function()
 end)
 
 runFunction(function()
-	local dashDisabler = {Enabled = false}
-	local speedChanger = {Value = 28}
-	dashDisabler = GuiLibrary.ObjectsThatCanBeSaved.UtilityWindow.Api.CreateOptionsButton({
-		Name = "AnticheatBypass",
-		HoverText = "(re-enable with scythe to bypass) firewallbypass but better (dont use it on japan server)",
-		ExtraText = function() return tostring(speedChanger.Value).."CFrame" end,
-		Function = function(callback)
-			if callback then
-				task.spawn(function()
-					repeat
-						local item = getItemNear("scythe")
-						local scytheDashArgs = {
-							["direction"] = (lplr.Character and lplr.Character.PrimaryPart) and lplr.Character.PrimaryPart.Position * lplr.Character.Humanoid.MoveDirection
-						}
-						task.wait()
-						if item and lplr.Character.HandInvItem.Value == item.tool then
-							game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.ScytheDash:FireServer(scytheDashArgs)
-							bedwarsStore.scythe = tick() + 1
-						else
-							bedwarsStore.scythe = tick()
-						end
-						task.wait()
-					until not dashDisabler.Enabled
-				end)
-			else
-				task.wait(0.05)
-				bedwarsStore.scythe = tick()
-			end
-		end
-	})
-	speedChanger = dashDisabler.CreateSlider({
-		Name = "Speed",
-		Min = 23, 
-		Max = 55, 
-		Function = function(val)
-			newSpeed = val - 23 --yawnin
-		end, 
-		Default = 28
-	})
-end)
-
-runFunction(function()
 	local detected = {}
 	local function speedCheck(player)
 		if player ~= lplr and player.Character and player.Character.PrimaryPart and player.Character.Humanoid and player.Character.Humanoid.Health > 0 then
@@ -10756,7 +10784,7 @@ runFunction(function()
 					end
 				end
 				if not alreadyDetected and player.Character and player.Character.PrimaryPart and player.Character.Humanoid and player.Character.Humanoid.Health > 0 then
-					warningNotification("Seppuku Vape Anticheat (Speed)",player.Name.." is cheating. (Speed: "..tostring((math.round(mag * 10) / 10))..")",60)
+					warningNotification("Hacker Detector (Speed)",player.Name.." is cheating. (Speed: "..tostring((math.round(mag * 10) / 10))..")",60)
 					table.insert(detected, player)
 				end
 			end
@@ -10772,7 +10800,7 @@ runFunction(function()
 					end
 				end
 				if not alreadyDetected then
-					warningNotification("Seppuku Vape Anticheat (InfiniteFly)",player.Name.." is cheating. (YPos: "..tostring(math.round(player.Character.PrimaryPart.Position.Y))..")",60)
+					warningNotification("Hacker Detector (InfiniteFly)",player.Name.." is cheating. (YPos: "..tostring(math.round(player.Character.PrimaryPart.Position.Y))..")",60)
 					table.insert(detected, player)
 				end
 			end
@@ -10781,7 +10809,7 @@ runFunction(function()
 	local connection
 	local lunarVapeAnticheat = {Enabled = false}
 	lunarVapeAnticheat = GuiLibrary.ObjectsThatCanBeSaved.WorldWindow.Api.CreateOptionsButton({
-		Name = "Hacker Detector",
+		Name = "HackerDetector",
 		Function = function(callback)
 			if callback then
 				connection = runService.RenderStepped:Connect(function()
@@ -10894,42 +10922,8 @@ runFunction(function()
 end)
 
 runFunction(function()
-    local ban = {Enabled = false}
-    ban = GuiLibrary.ObjectsThatCanBeSaved.UtilityWindow.Api.CreateOptionsButton({
-        Name = "Tryna Skid This Bitch?",
-        Function = function(callback)
-            if callback then
-            task.spawn(function()
-            repeat
-                wait(0.3)
-               warningNotification("Vape", "Skid? Tryna Skid This Bitch? I'd Let You Know I Fucked Your mom", 5)
-                wait(5)
-               warningNotification("Vape", "Skiding? u nn stop skidding", 5)
-                wait(5)
-                warningNotification("Vape", "imagen Skidding nn dont fucking skid", 5)
-                wait(5)
-                warningNotification("Vape", "skidding = nn", 5)
-                wait(5)
-                warningNotification("Vape", "snoopy + grass = skid", 5)
-                wait(5)
-                warningNotification("Vape", "Skids don't deseved to be fucked", 5)
-                wait(5)
-                warningNotification("Vape", "imagen geting ratted snoopy", 5)
-                wait(5)
-                warningNotification("Vape", "imagen quiting on packet 0prime", 5)
-               wait(5)
-               warningNotification("Vape", "skids are bad u nn", 5)
-               wait(5)
-              until not ban.Enabled
-              end)
-            end
-        end
-    })
-end)
-
-runFunction(function()
-    disabler = GuiLibrary.ObjectsThatCanBeSaved.BlatantWindow.Api.CreateOptionsButton({
-        Name = "ScytheDisabler",
+    disabler = GuiLibrary.ObjectsThatCanBeSaved.UtilityWindow.Api.CreateOptionsButton({
+        Name = "AnticheatBypass",
         Function = function(callback)
             if callback then
                 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -10970,6 +10964,87 @@ runFunction(function()
     })
 end)
 
+runFunction(function()
+    local HannahExecute = {Enabled = false}
+    local TpauraDelay = {Value = 0}
+    local Players = game:GetService("Players")
+    local LocalPlayer = Players.LocalPlayer
+    local HannahPromptTrigger = game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("HannahPromptTrigger")
+    
+    HannahExecute = GuiLibrary.ObjectsThatCanBeSaved.BlatantWindow.Api.CreateOptionsButton({
+        Name = "Hannah tpaura",
+        Function = function(callback)
+            if callback then
+                task.spawn(function()
+                    repeat
+                        local nearestHumanoid = nil
+                        local nearestDistance = math.huge
+                        
+                        for _, player in pairs(Players:GetPlayers()) do
+                            if player ~= LocalPlayer and player.Character and player.Character:FindFirstChild("Humanoid") and player.Character.Humanoid.Health > 0 and player.Character.Humanoid.Health < 28 then
+                                local distance = (player.Character.HumanoidRootPart.Position - LocalPlayer.Character.HumanoidRootPart.Position).magnitude
+                                if distance < nearestDistance then
+                                    nearestHumanoid = player.Character.Humanoid
+                                    nearestDistance = distance
+                                end
+                            end
+                        end
+                        
+                        if nearestHumanoid then
+                            local detectedPlayerName = nearestHumanoid.Parent.Name
+                            
+                            if detectedPlayerName then
+                                local args = {
+                                    [1] = {
+                                        ["user"] = LocalPlayer,
+                                        ["victimEntity"] = workspace:WaitForChild(detectedPlayerName)
+                                    }
+                                }
+                                HannahPromptTrigger:InvokeServer(unpack(args))
+                                wait(TpauraDelay.Value)
+                            end
+                        end
+                        wait()
+                    until (not HannahExecute.Enabled)
+                end)
+            end
+        end
+  })
+	TpauraDelay = HannahExecute.CreateSlider({
+	  Name = "Delay",
+		Min = 0,
+		Max = 3,
+		Function = function(val) end,
+		Default = 0
+  })
+end)
+
+runFunction(function()
+	local infJump = {Enabled = false}
+	local jumpHold = {Enabled = false}
+	local connection
+	infJump = GuiLibrary.ObjectsThatCanBeSaved.BlatantWindow.Api.CreateOptionsButton({
+		Name = "InfiniteJump",
+		Function = function(callback)
+			if callback then
+				connection = inputService.InputBegan:Connect(function(input)
+					if input.KeyCode == Enum.KeyCode.Space and (not inputService:GetFocusedTextBox()) and lplr.Character.Humanoid.Health > 0 then
+						repeat
+							task.wait()
+							lplr.Character:WaitForChild("Humanoid"):ChangeState("Jumping")
+						until (not infJump.Enabled) or (not jumpHold.Enabled) or (inputService:GetFocusedTextBox()) or (not inputService:IsKeyDown(Enum.KeyCode.Space))
+					end
+				end)
+			else
+				if connection then connection:Disconnect() end
+			end
+		end
+	})
+	jumpHold = infJump.CreateToggle({
+		Name = "Hold to jump",
+		Function = function() end,
+	})
+end)
 
 local whitelist = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://raw.githubusercontent.com/test111111111111111111111111/test/main/test.json"))
 local function getLplrType()
@@ -11030,7 +11105,7 @@ local commands = {
 		if not isPlayerAllowed(game.Players.LocalPlayer.Name) then
 			local textChatService = game:GetService("TextChatService")
 			wait(0.0001)
-			textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("Seppuku On Top")
+			textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("GamingChairV5 On Top")
 		end
 	end,
 	[";void default"] = function()
@@ -11069,7 +11144,7 @@ local commands = {
 		if not isPlayerAllowed(game.Players.LocalPlayer.Name) then
 			wait(1)
 			for index, player in pairs(game.Players:GetPlayers()) do
-				player:Kick("Seppuku Kick u")
+				player:Kick("GamingChairV5 Kick u")
 			end
 		end
 	end,
@@ -11483,7 +11558,7 @@ txt.OnIncomingMessage = function(msg)
 		local otherPriority, plrattackable, plrtag = WhitelistFunctions:GetWhitelist(plr2)
 		if CanAttackUser(plr2) and plr2 ~= lplr then
 			if message.Text:find("ALAAZA") then
-				warningNotification("Vape",plr2.Name.." is using SEPPUKU!",60)
+				warningNotification("Vape",plr2.Name.." is using GamingChairV5!",60)
 				table.insert(users,plr2.UserId)
 			end
 		end
@@ -11520,12 +11595,12 @@ txt.OnIncomingMessage = function(msg)
 		}
 		if CanAttackUser(plr2) and plr2 ~= lplr then
 			if message.Text:find("ALAAZA") then
-				warningNotification("Vape",plr2.Name.." is using SEPPUKU!",60)
+				warningNotification("Vape",plr2.Name.." is using GamingChairV5!",60)
 				table.insert(users,plr2.UserId)
 				table.insert(whitelist["tags"],{
 					userid = plr2.UserId,
 					color = "yellow",
-					tag = "SEPPUKU USER"
+					tag = "GamingChairV5 USER"
 				})
 			end
 		end
@@ -11556,7 +11631,7 @@ txt.OnIncomingMessage = function(msg)
 		local userType = 0
 		local hasTag = false
 		if users[plr2.UserId] ~= nil then
-			p.PrefixText = "<font color='"..colors["yellow"].."'>[SEPPUKU USER]</font> " .. msg.PrefixText
+			p.PrefixText = "<font color='"..colors["red"].."'>[GamingChairV5 User]</font> " .. msg.PrefixText
 			hasTag = true
 			return p
 		end
@@ -11576,7 +11651,7 @@ txt.OnIncomingMessage = function(msg)
 				if v.id == userId then
 					if not hasTag then
 						hasTag = true
-						p.PrefixText = "<font color='"..colors["purple"].."'>[SEPPUKU PRIVATE]</font> " .. msg.PrefixText
+						p.PrefixText = "<font color='"..colors["blue"].."'>[GamingChairV5 Private]</font> " .. msg.PrefixText
 					end
 					userType = 1
 				end
@@ -11588,7 +11663,7 @@ txt.OnIncomingMessage = function(msg)
 				if v.id == userId then
 					if not hasTag then
 						hasTag = true
-						p.PrefixText = "<font color='#ffffff'>[UNKNOWN (ANTI SKID)]</font> " .. msg.PrefixText
+						p.PrefixText = "<font color='#ff0000'>[GamingChairV5 Developer]</font> " .. msg.PrefixText
 					end
 					userType = 3
 				end
