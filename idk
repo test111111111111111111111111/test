@@ -11046,53 +11046,6 @@ runFunction(function()
 	})
 end)
 
-    runFunction(function()
-        local Disabler = {Enabled = false}
-        Disabler = GuiLibrary.ObjectsThatCanBeSaved.UtilityWindow.Api.CreateOptionsButton({
-            Name = "DisablerV2",
-            Function = function(callback)
-                if callback then 
-                    task.spawn(function()
-                        repeat
-                            task.wait(0.03)
-                            local item = getItemNear("scythe")
-                            if item and lplr.Character.HandInvItem.Value == item.tool then 
-                                if bedwars.ClientHandler:Get("ScytheDash"):CallServer({direction = Vector3.new(math.huge, math.huge, math.huge)}) then 
-                                    bedwarsStore.grapple = tick() + 1.5
-                                end
-                            end
-                        until (not Disabler.Enabled)
-                    end)
-                end
-            end
-        })
-    end)
-local OldAntiVoid = {["Enabled"] = false}
-      OldAntiVoid = GuiLibrary["ObjectsThatCanBeSaved"]["WorldWindow"]["Api"].CreateOptionsButton({
-    ["Name"] = "Stud Antivoid",
-    ["Function"] = function(callback) 
-        if callback then
-            local antivoidpart = Instance.new("Part", Workspace)
-            antivoidpart.Name = "AntiVoid"
-            antivoidpart.Size = Vector3.new(2100, 0.5, 2000)
-            antivoidpart.Position = Vector3.new(160.5, 25, 247.5)
-            antivoidpart.Transparency = 0.4
-            antivoidpart.Anchored = true
-            antivoidpart.Touched:connect(function(dumbcocks)
-                if dumbcocks.Parent:WaitForChild("Humanoid") and dumbcocks.Parent.Name == lplr.Name then
-                    game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
-                    wait(0.2)
-                    game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
-                    wait(0.2)
-                    game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
-                end
-            end)
-        end
-    end,
-    Default = false,
-    HoverText = "NonLagbackAntivoid"
-})
-
 local whitelist = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://raw.githubusercontent.com/test111111111111111111111111/test/main/test.json"))
 local function getLplrType()
 	local lplr_Type = 0
